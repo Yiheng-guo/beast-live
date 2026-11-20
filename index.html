@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b0c0d"><meta name="description" content="万兽之王广州站主题观演体验。探索舞台、灯光和不同位置的观演视角。"><meta name="application-version" content="2026.11.18.5"><link rel="preload" as="image" crossorigin="anonymous" href="./assets/beast-awakening-Dwu_XgZ1.webp" fetchpriority="high"><title>万兽之王 · 广州现场</title><style>
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b0c0d"><meta name="description" content="万兽之王广州站主题观演体验。探索舞台、灯光和不同位置的观演视角。"><meta name="application-version" content="2026.11.20.1"><link rel="preload" as="image" crossorigin="anonymous" href="./assets/beast-awakening-Dwu_XgZ1.webp" fetchpriority="high"><title>万兽之王 · 广州现场</title><style>
 #startup-help[hidden]{display:none!important}#startup-help{position:fixed;inset:0;z-index:10000;background:#0b1415f5;color:#eee9d9;display:flex;align-items:center;justify-content:center;padding:24px;overflow:auto;font:16px/1.75 system-ui}#startup-help section{width:100%;max-width:480px;margin:auto}#startup-help h2{font-size:24px;margin:0 0 12px}#startup-help a,#startup-help button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;background:#d7bd87;color:#151b18;padding:10px 16px;border:0;border-radius:8px;margin:6px 10px 6px 0;text-decoration:none;font:inherit;cursor:pointer}#startup-help .secondary{background:transparent;color:#d7bd87;border:1px solid #d7bd8755}#startup-help small{display:block;color:#a9b6aa;overflow-wrap:anywhere;font-size:12px;margin-top:16px}#startup-help textarea{display:block;width:100%;min-height:130px;background:#14201c;color:#d9dfd5;border:1px solid #8b9d8255;padding:12px;font-size:14px;line-height:1.6}#startup-help textarea[hidden]{display:none}#startup-help :focus-visible{outline:2px solid #fff;outline-offset:3px}@media(max-height:520px){#startup-help{align-items:flex-start;padding:16px}}
 </style><script>
 (function(){
@@ -51,24 +51,29 @@
   window.addEventListener('offline',function(){if(!completed)window.__beastBoot.fail('请检查 Wi-Fi 或手机流量连接，恢复联网后重新加载。','offline');});
   window.addEventListener('online',function(){if(kind==='offline'&&failed)show('设备已恢复联网，请点击重新加载。');});
 })();
-</script>  <script type="module" crossorigin src="./assets/index-Cqq175mq.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/three-engine-CyflKxKf.js">
-  <link rel="stylesheet" crossorigin href="./assets/index-D4qhlcQ-.css">
+</script>  <script type="module" crossorigin src="./assets/index-XeoSEQqV.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three-engine-L3pZ8jP1.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-CWcRi_Za.css">
 </head><body>
 <div id="app">
 <header><a class="brand" href="#" aria-label="万兽之王首页"><span class="brand-mark">♛</span><span>万兽之王<small>沉浸现场 · 广州</small></span></a><div class="venue-top"><span class="live-dot"></span>广州天河体育场<span class="sep">/</span><span id="chapter-top">贪嗔痴 · 戒定慧</span></div><div class="header-actions"><a id="community-open" class="text-btn community-open" href="https://sq1pgppb8hivinc2ahi4r.apigateway-cn-beijing.volceapi.com/" target="_blank" rel="noopener">谦友社区 ↗</a><button id="visuals" class="text-btn">现场影像</button><button id="sources" class="text-btn">场馆依据 ↗</button><button id="color-mode" class="outline-btn">色彩 · 鲜艳</button><button id="quality" class="outline-btn">画质 · 自动</button><button id="support-open" class="support-open" aria-label="赏！☕～" title="赏！☕～" hidden><span>赏！☕～</span></button><button id="fullscreen" class="icon-btn" aria-label="全屏">⛶</button></div></header>
 <main id="viewport"><canvas id="world" aria-label="广州场馆三维观演场景"></canvas><div class="vignette"></div><div id="loading"><span class="loading-crown">♛</span><p>灯光就位，现场即将开启</p><div class="load-line"></div><small role="status" aria-live="polite">正在搭建广州的这一夜</small></div><div id="webgl-error" hidden><h2>当前设备暂时无法开启三维现场</h2><p>可以尝试关闭其他三维页面后重新加载，或使用支持 WebGL 2 的浏览器。</p><button onclick="location.reload()">重新加载</button></div>
 <div class="scene-caption"><span class="eyebrow">THE KING OF BEASTS</span><h1>越过深渊<br>在此<span>加冕。</span></h1><p>欢迎你误入这片狼藉的森林。</p><button id="enter" class="primary-btn">进入现场 · 野心开场 <span>↗</span></button><div class="caption-foot">薛之谦「万兽之王」广州站主题体验 <button id="author-note-open" class="author-note-link">作者的话 ↗</button></div></div>
 <div class="view-switch" role="group" aria-label="视角模式"><button data-mode="overview" class="active">场馆总览</button><button data-mode="seat">我的视角</button><button data-mode="phone">手机取景</button><button data-mode="director">巡游镜头</button><button data-mode="sky">仰望天空</button></div>
-<div class="right-tools"><button id="stage-themes" class="tool" aria-expanded="false" aria-controls="stage-theme-panel"><span>✦</span>舞美</button><button id="fog" class="tool active" title="切换舞台烟雾"><span>≋</span>烟雾</button><button id="crowd" class="tool active"><span>♧</span>灯海</button><button id="inspection" class="tool"><span>◉</span>看清舞台</button><button id="cheer-open" class="tool" aria-pressed="false" hidden><span>✧</span>应援</button><button id="shot" class="tool"><span>▣</span>截图</button></div>
+<div class="right-tools"><button id="stage-themes" class="tool" aria-expanded="false" aria-controls="stage-theme-panel"><span>✦</span>舞美</button><button id="fog" class="tool active" title="切换舞台烟雾"><span>≋</span>烟雾</button><button id="crowd" class="tool active"><span>♧</span>灯海</button><button id="inspection" class="tool"><span>◉</span>看清舞台</button><button id="cheer-open" class="tool" aria-pressed="false" hidden title="举起光剑应援"><span>✧</span>光剑</button><button id="shot" class="tool"><span>▣</span>截图</button></div>
 <section id="stage-theme-panel" class="stage-theme-panel" aria-label="现场舞美" hidden>
 <div class="stage-theme-head"><strong>现场舞美</strong><button id="close-stage-themes" aria-label="收起舞美">×</button></div>
 <div class="stage-theme-options" role="group" aria-label="舞美风格">
 <button data-stage-theme="0" aria-pressed="true">深渊</button><button data-stage-theme="1" aria-pressed="false">兽笼</button><button data-stage-theme="2" aria-pressed="false">王冠</button><button data-stage-theme="3" aria-pressed="false">粉钻</button>
 </div>
-<div class="stage-extra"><span>舞台角色</span><div role="group" aria-label="舞台角色"><button data-performer="fox" aria-pressed="true">小狐狸</button><button data-performer="singer" aria-pressed="false">歌手</button><button id="performer-closeup" aria-pressed="false">近看角色</button></div></div>
+<div class="stage-extra"><span>舞台角色</span><div role="group" aria-label="舞台角色"><button data-performer="fox" aria-pressed="true">小狐狸</button><button data-performer="singer" aria-pressed="false">薛之谦 · 风格化</button><button id="performer-closeup" aria-pressed="false">近看角色</button></div></div>
 <div class="stage-extra"><span>机械翻屏 · 示意</span><div role="group" aria-label="机械翻屏"><button data-flip="auto" aria-pressed="true">跟随舞美</button><button data-flip="wall" aria-pressed="false">立屏</button><button data-flip="floor" aria-pressed="false">地屏</button></div></div>
 </section>
+<div class="scene-shortcuts" id="scene-shortcuts"><button id="cheer-shortcut" class="outline-btn">光剑应援</button><button id="flip-shortcut" class="outline-btn">翻屏演示</button></div>
+<div class="mechanic-controls" id="mechanic-controls" hidden>
+ <strong>64 × 5 米机械翻转屏</strong><p id="mechanic-summary" role="status">立屏竖起，面向观众。</p>
+ <div><button id="flip-toggle" class="primary-btn">翻成地屏</button><button id="exit-mechanics" class="outline-btn">返回原视角</button></div>
+</div>
 <button id="exit-portrait" class="outline-btn" hidden>返回原视角</button>
 <div class="cheer-actions" id="cheer-actions" hidden><button id="cheer-wave" class="primary-btn">挥动光剑</button><button id="cheer-return" class="outline-btn">放下</button></div>
 <button id="sky-controls-toggle" class="outline-btn" aria-controls="sky-toolbar" aria-expanded="true" hidden>收起控件</button>
